@@ -7,3 +7,7 @@
 - Lancer la commande : `streamlit run app.py`
 
 # Parfait
+
+
+https://github.com/user-attachments/assets/56ccc1c1-194f-4c8e-8931-93c95f3da4ea
+
