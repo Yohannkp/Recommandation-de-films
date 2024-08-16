@@ -32,7 +32,7 @@ similarity = pickle.load(open('./similarity.pkl','rb'))
 
 movie_list = movies['title'].values
 selected_movie = st.selectbox(
-    "Type or select a movie from the dropdown",
+    "Ecrivez ou recherchez un film dans cette liste",
     movie_list
 )
 
@@ -58,4 +58,6 @@ if st.button('Show Recommendation'):
 
 
 
+
+st.text("Yohann's Project")
 
