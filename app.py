@@ -30,9 +30,9 @@ url_dic = 'https://drive.google.com/file/d/1V4zE150xvuoeCEMbAeVdK8QJsVr6PPS7/vie
 response_dic = requests.get(url_dic)
 url_sim = 'https://drive.google.com/file/d/1SxzgicDNXwaNhtI4pjo40LjPL-XUbatc/view?usp=drive_link'
 response_sim = requests.get(url_dic)
-movies_dict = pickle.load(url_dic)
+movies_dict = pickle.loads(url_dic)
 movies = pd.DataFrame(movies_dict)
-similarity = pickle.load(url_sim)
+similarity = pickle.loads(url_sim)
 
 movie_list = movies['title'].values
 selected_movie = st.selectbox(
