@@ -26,9 +26,9 @@ def recommend(movie):
 
 
 st.header('Systeme de recommandation de films')
-movies_dict = pickle.load(open('./movie_dict.pkl','rb'))
+movies_dict = pickle.load(open('https://drive.google.com/file/d/1V4zE150xvuoeCEMbAeVdK8QJsVr6PPS7/view?usp=drive_link','rb'))
 movies = pd.DataFrame(movies_dict)
-similarity = pickle.load(open('./similarity.pkl','rb'))
+similarity = pickle.load(open('https://drive.google.com/file/d/1SxzgicDNXwaNhtI4pjo40LjPL-XUbatc/view?usp=drive_link','rb'))
 
 movie_list = movies['title'].values
 selected_movie = st.selectbox(
